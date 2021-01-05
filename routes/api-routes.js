@@ -36,6 +36,6 @@ function apiRoutes(app) {
         fs.writeFile(path.join(__dirname, '../db/db.json'), JSON.stringify(savedNotes), function (err) {
             if (err) throw (err);
             res.send('Deleted Notes!');
-        })
-    })
+        });
+    });
 }
